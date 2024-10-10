@@ -1,0 +1,138 @@
+body {
+    background-color: rgb(80, 80, 80);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+#divCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#divCards .col-lg-4 {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-title, .card-text {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.caution-text {
+    max-height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.log-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.log-entry {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+@media (max-width: 1200px) {
+    #divCards .col-lg-4 {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    #divCards {
+        flex-direction: column;
+    }
+
+    #divCards .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .card {
+        height: auto;
+    }
+}
+
+#barraLateral {
+    background-color: #1d576b;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: white;
+}
+
+#barra-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#barraLateral h4 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#search-bar {
+    margin-bottom: 10px;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item:hover, .list-group-item.active {
+    background-color: #007bff;
+    color: white;
+}
+
+#barraLateralBtn {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    #barraLateral {
+        width: 100%;
+        padding: 15px;
+        margin: 0;
+    }
+}
+
+.modal-title{
+    color: black;
+}
