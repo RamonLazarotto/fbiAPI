@@ -63,7 +63,12 @@ h1 {
     justify-content: space-between;
     width: 100%;
 }
-
+footer {
+    background-color: #f9f9f9; 
+    position: relative; 
+    bottom: 0;
+    width: 100%; 
+}
 
 @media (max-width: 1200px) {
     #divCards .col-lg-4 {
